@@ -6,7 +6,7 @@ class Register extends Component {
 	static navigationOptions = {
 		header: null
 	}
-  	render() {
+	render() {
 		const{navigate} = this.props.navigation;
 		return (
 			<ImageBackground
@@ -26,7 +26,7 @@ class Register extends Component {
 							<Label style={styles.labelStyle}>
 								Username
 							</Label>
-							<Input 
+							<Input
 								style={styles.inputTextStyle}
 							/>
 						</Item>
@@ -36,7 +36,7 @@ class Register extends Component {
 							<Label style={styles.labelStyle}>
 								Email
 							</Label>
-							<Input 
+							<Input
 								style={styles.inputTextStyle}
 								keyboardType='email-address'
 							/>
@@ -47,7 +47,7 @@ class Register extends Component {
 							<Label style={styles.labelStyle}>
 								Password
 							</Label>
-							<Input 
+							<Input
 								style={styles.inputTextStyle}
 								secureTextEntry
 							/>
@@ -71,76 +71,76 @@ class Register extends Component {
 				</View>
 			</ImageBackground>
 		);
-  	}
+	}
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor: 'white',
-    },
+	container:{
+		flex: 1,
+		backgroundColor: 'white',
+	},
 
-    headerContainer:{
-        marginTop: 60,
-        alignItems: 'center',
-    },
+	headerContainer:{
+		marginTop: 60,
+		alignItems: 'center',
+	},
 
-    headerStyle:{
-        fontFamily: 'Symbol',
-        fontSize: 50,
-        fontWeight: 'bold',
-        color: 'white',
-    },
+	headerStyle:{
+		fontFamily: 'Symbol',
+		fontSize: 50,
+		fontWeight: 'bold',
+		color: 'white',
+	},
 
-    subStyle:{
-        color: 'white',
-    },
+	subStyle:{
+		color: 'white',
+	},
 
-    inputContainer:{
-        paddingHorizontal: 90,
-        marginTop: 60,
-    },
+	inputContainer:{
+		paddingHorizontal: 90,
+		marginTop: 60,
+	},
 
-    underlineStyle:{
-        marginTop: 15,
-    },
+	underlineStyle:{
+		marginTop: 15,
+	},
 
-    labelStyle:{
-        color: 'white',
-    },
+	labelStyle:{
+		color: 'white',
+	},
 
-    inputTextStyle:{
-        color: 'white',
-    },
+	inputTextStyle:{
+		color: 'white',
+	},
 
-    placeholderStyle:{
-        marginLeft: 20,
-        color: 'rgba(0,0,0,0.5)'
-    },
+	placeholderStyle:{
+		marginLeft: 20,
+		color: 'rgba(0,0,0,0.5)'
+	},
 
-    buttonStyle:{
-        marginTop: 85,
-        height: 50,
-        borderWidth: 2,
-        borderColor: 'white',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 25,
-    },
+	buttonStyle:{
+		marginTop: 85,
+		height: 50,
+		borderWidth: 2,
+		borderColor: 'white',
+		alignItems: 'center',
+		justifyContent: 'center',
+		borderRadius: 25,
+	},
 
-    textStyle:{
-        color: 'white',
-        fontWeight: 'bold',
-    },
+	textStyle:{
+		color: 'white',
+		fontWeight: 'bold',
+	},
 
-    bottomText:{
-        marginTop: 120,
-        alignItems: 'center',
-    },
+	bottomText:{
+		marginTop: 120,
+		alignItems: 'center',
+	},
 
-    bottomStyle:{
-        fontSize: 14,
-        color: 'rgba(255,255,255,0.5)',
+	bottomStyle:{
+		fontSize: 14,
+		color: 'rgba(255,255,255,0.5)',
 	},
 	
 	boldStyle:{
