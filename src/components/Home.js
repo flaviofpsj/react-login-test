@@ -38,47 +38,47 @@ class Home extends Component {
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor: 'white',
+	container:{
+		flex: 1,
+		backgroundColor: 'white',
 	},
 
 	inputContainer:{
 		paddingHorizontal: 80,
 		marginTop: 220,
-    },
+	},
 
 	singleButtonStyle:{
 		marginTop: 30,
-        height: 50,
-        backgroundColor: '#fecb89',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 25,
+		height: 50,
+		backgroundColor: '#fecb89',
+		alignItems: 'center',
+		justifyContent: 'center',
+		borderRadius: 25,
 	},
 	
 	loginButtonStyle:{
 		marginTop: 30,
-        height: 50,
-        backgroundColor: '#fb6f92',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 25,
+		height: 50,
+		backgroundColor: '#fb6f92',
+		alignItems: 'center',
+		justifyContent: 'center',
+		borderRadius: 25,
 	},
 	
 	registerButtonStyle:{
 		marginTop: 30,
-        height: 50,
-        backgroundColor: '#60428a',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 25,
-    },
+		height: 50,
+		backgroundColor: '#60428a',
+		alignItems: 'center',
+		justifyContent: 'center',
+		borderRadius: 25,
+	},
 	
 	textStyle:{
-        color: 'white',
-        fontWeight: 'bold',
-    }
+		color: 'white',
+		fontWeight: 'bold',
+	}
 });
 
 export default Home;
