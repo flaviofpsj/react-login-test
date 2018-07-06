@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 
 class Home extends Component {
 	static navigationOptions = {
@@ -9,9 +9,14 @@ class Home extends Component {
 		const{navigate} = this.props.navigation;
 		return (
 			<View style={styles.container}>
+				<StatusBar
+					barStyle='dark-content'
+					translucent={true}
+					backgroundColor='transparent'
+				/>
 				<View style={styles.inputContainer}>
 					<TouchableOpacity style={styles.singleButtonStyle}
-						onPress={() => alert('Troca de Balita')}
+						onPress={() => alert('Engapp Rules')}
 					>
 						<Text style={styles.textStyle}>
 							Click Here
