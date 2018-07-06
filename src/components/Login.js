@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, KeyboardAvoidingView, StatusBar } from 'react-native';
 import { Item, Input, Icon } from 'native-base';
 import axios from 'axios';
 
@@ -9,11 +9,16 @@ class Login extends Component {
 	}
 	//criando estado padrão
 	state = {
+		name: '',
 		email: '',
 		password: '',
 	};
 
 	//criando seters, que recebem a mudança de estado
+	setName = (name) => {
+		this.setState({name: name});
+	}
+
 	setEmail = (email) => {
 		this.setState({email: email});
 	}
@@ -40,7 +45,7 @@ class Login extends Component {
 		else {
 			try {
 				//verifica o valor dos campos
-				const res = await axios.post("http://<ip_number>:8080/users/email", {email: this.state.email, password: this.state.password});
+				const res = await axios.post("http://<ip_number>:8080/users/login", {email: this.state.email, password: this.state.password});
 				//se estiverem ok ele navega para a Home
 				if(res.data.status === 'ok') {
 					this.props.navigation.navigate('Home');
@@ -58,7 +63,12 @@ class Login extends Component {
 	render() {
 		const{navigate} = this.props.navigation;
 		return (
-			<View style={styles.container}>
+			<KeyboardAvoidingView behavior='padding' style={styles.container}>
+				<StatusBar
+					barStyle='dark-content'
+					translucent={true}
+					backgroundColor='transparent'
+				/>
 				<View style={styles.imageContainer}>
 					<Image
 						style={styles.imageLogo}
@@ -77,6 +87,9 @@ class Login extends Component {
 							onChangeText={this.setEmail}
 							placeholder='Email'
 							keyboardType='email-address'
+							returnKeyType='next'
+							autoCapitalize='none'
+							autoCorrect={false}
 						/>
 					</Item>
 					<Item style={styles.underlineStyle}>
@@ -90,6 +103,7 @@ class Login extends Component {
 							onChangeText={this.setPassword}
 							placeholder='Password'
 							secureTextEntry
+							returnKeyType='done'
 						/>
 					</Item>
 					<TouchableOpacity style={styles.buttonStyle}
@@ -107,7 +121,7 @@ class Login extends Component {
 						</Text>
 					</TouchableOpacity>
 				</View>
-			</View>
+			</KeyboardAvoidingView>
 		);
 	}
 }
