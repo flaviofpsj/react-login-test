@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, StatusBar } from 'react-native';
 import { Item, Input, Label, Form } from 'native-base';
 
 class Register extends Component {
@@ -13,6 +13,11 @@ class Register extends Component {
 				source={require('../../src/assets/images/back.jpg')}
 				style={styles.container}>
 				<View style={styles.headerContainer}>
+					<StatusBar
+						barStyle='light-content'
+						translucent={true}
+						backgroundColor='transparent'
+					/>
 					<Text style={styles.headerStyle}>
 						ENGAPP
 					</Text>
@@ -28,6 +33,8 @@ class Register extends Component {
 							</Label>
 							<Input
 								style={styles.inputTextStyle}
+								returnKeyType='next'
+								autoCorrect={false}
 							/>
 						</Item>
 					</Form>
@@ -39,6 +46,9 @@ class Register extends Component {
 							<Input
 								style={styles.inputTextStyle}
 								keyboardType='email-address'
+								returnKeyType='next'
+								autoCapitalize='none'
+								autoCorrect={false}
 							/>
 						</Item>
 					</Form>
@@ -50,6 +60,7 @@ class Register extends Component {
 							<Input
 								style={styles.inputTextStyle}
 								secureTextEntry
+								returnKeyType='done'
 							/>
 						</Item>
 					</Form>
