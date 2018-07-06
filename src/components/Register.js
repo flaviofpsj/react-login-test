@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground, KeyboardAvoidingView, StatusBar } from 'react-native';
 import { Item, Input, Label, Form } from 'native-base';
 
 class Register extends Component {
@@ -12,74 +12,76 @@ class Register extends Component {
 			<ImageBackground
 				source={require('../../src/assets/images/back.jpg')}
 				style={styles.container}>
-				<View style={styles.headerContainer}>
-					<StatusBar
-						barStyle='light-content'
-						translucent={true}
-						backgroundColor='transparent'
-					/>
-					<Text style={styles.headerStyle}>
-						ENGAPP
-					</Text>
-					<Text style={styles.subStyle}>
-						Register Screen
-					</Text>
-				</View>
-				<View style={styles.inputContainer}>
-					<Form style={styles.underlineStyle}>
-						<Item stackedLabel>
-							<Label style={styles.labelStyle}>
-								Username
-							</Label>
-							<Input
-								style={styles.inputTextStyle}
-								returnKeyType='next'
-								autoCorrect={false}
-							/>
-						</Item>
-					</Form>
-					<Form style={styles.underlineStyle}>
-						<Item stackedLabel>
-							<Label style={styles.labelStyle}>
-								Email
-							</Label>
-							<Input
-								style={styles.inputTextStyle}
-								keyboardType='email-address'
-								returnKeyType='next'
-								autoCapitalize='none'
-								autoCorrect={false}
-							/>
-						</Item>
-					</Form>
-					<Form style={styles.underlineStyle}>
-						<Item stackedLabel>
-							<Label style={styles.labelStyle}>
-								Password
-							</Label>
-							<Input
-								style={styles.inputTextStyle}
-								secureTextEntry
-								returnKeyType='done'
-							/>
-						</Item>
-					</Form>
-					<TouchableOpacity style={styles.buttonStyle}
-						onPress={() => navigate('Home')}
-					>
-						<Text style={styles.textStyle}>
-							Register
+				<KeyboardAvoidingView behavior='padding'>
+					<View style={styles.headerContainer}>
+						<StatusBar
+							barStyle='light-content'
+							translucent={true}
+							backgroundColor='transparent'
+						/>
+						<Text style={styles.headerStyle}>
+							ENGAPP
 						</Text>
-					</TouchableOpacity>
-					<TouchableOpacity
-						onPress={() => navigate('Login')}
-						style={styles.bottomText}
-					>
-						<Text style={styles.bottomStyle}>
-							Already have an Account? <Text style={styles.boldStyle}>Login Here.</Text>
+						<Text style={styles.subStyle}>
+							Register Screen
 						</Text>
-					</TouchableOpacity>
-				</View>
+					</View>
+					<View style={styles.inputContainer}>
+						<Form style={styles.underlineStyle}>
+							<Item stackedLabel>
+								<Label style={styles.labelStyle}>
+									Username
+								</Label>
+								<Input
+									style={styles.inputTextStyle}
+									returnKeyType='next'
+									autoCorrect={false}
+								/>
+							</Item>
+						</Form>
+						<Form style={styles.underlineStyle}>
+							<Item stackedLabel>
+								<Label style={styles.labelStyle}>
+									Email
+								</Label>
+								<Input
+									style={styles.inputTextStyle}
+									keyboardType='email-address'
+									returnKeyType='next'
+									autoCapitalize='none'
+									autoCorrect={false}
+								/>
+							</Item>
+						</Form>
+						<Form style={styles.underlineStyle}>
+							<Item stackedLabel>
+								<Label style={styles.labelStyle}>
+									Password
+								</Label>
+								<Input
+									style={styles.inputTextStyle}
+									secureTextEntry
+									returnKeyType='done'
+								/>
+							</Item>
+						</Form>
+						<TouchableOpacity style={styles.buttonStyle}
+							onPress={() => navigate('Home')}
+						>
+							<Text style={styles.textStyle}>
+								Register
+							</Text>
+						</TouchableOpacity>
+						<TouchableOpacity
+							onPress={() => navigate('Login')}
+							style={styles.bottomText}
+						>
+							<Text style={styles.bottomStyle}>
+								Already have an Account? <Text style={styles.boldStyle}>Login Here.</Text>
+							</Text>
+						</TouchableOpacity>
+					</View>
+				</KeyboardAvoidingView>
 			</ImageBackground>
 		);
 	}
