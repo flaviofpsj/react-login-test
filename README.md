@@ -1,6 +1,6 @@
 # React Login Test ![Github Stars](https://img.shields.io/github/stars/ffpsj/react-login-test.svg?label=Stars) ![Github Forks](https://img.shields.io/github/forks/ffpsj/react-login-test.svg?label=Forks) ![Github Watchers](https://img.shields.io/github/watchers/ffpsj/react-login-test.svg?label=Watchers) ![Github Followers](https://img.shields.io/github/followers/ffpsj.svg?label=Followers) ![Github Contributors](https://img.shields.io/github/contributors/ffpsj/react-login-test.svg?label=Contributors) ![Github Repository Size](https://img.shields.io/github/repo-size/ffpsj/react-login-test.svg?label=Size)
 
-![Header](https://i.imgur.com/rfocDWe.png)
+![Header](https://i.imgur.com/aSkqrJp.png)
 
 A simple login screen made in React Native with Express connection
 
@@ -18,4 +18,4 @@ A simple login screen made in React Native with Express connection
 
 ## Contact Me
 + E-mail: ffpsjr@gmail.com
-+ Telefone: (82) 9 9121-3725
++ Phone: +5582991213725
