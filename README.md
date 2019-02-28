@@ -1,20 +1,20 @@
-# React Login Test ![Github Stars](https://img.shields.io/github/stars/ffpsj/react-login-test.svg?label=Stars) ![Github Forks](https://img.shields.io/github/forks/ffpsj/react-login-test.svg?label=Forks) ![Github Watchers](https://img.shields.io/github/watchers/ffpsj/react-login-test.svg?label=Watchers) ![Github Followers](https://img.shields.io/github/followers/ffpsj.svg?label=Followers) ![Github Contributors](https://img.shields.io/github/contributors/ffpsj/react-login-test.svg?label=Contributors) ![Github Repository Size](https://img.shields.io/github/repo-size/ffpsj/react-login-test.svg?label=Size)
+# React Login Test ![Github Stars](https://img.shields.io/github/stars/flaviofpsj/react-login-test.svg?label=Stars) ![Github Forks](https://img.shields.io/github/forks/flaviofpsj/react-login-test.svg?label=Forks) ![Github Watchers](https://img.shields.io/github/watchers/flaviofpsj/react-login-test.svg?label=Watchers) ![Github Followers](https://img.shields.io/github/followers/flaviofpsj.svg?label=Followers) ![Github Contributors](https://img.shields.io/github/contributors/flaviofpsj/react-login-test.svg?label=Contributors) ![Github Repository Size](https://img.shields.io/github/repo-size/flaviofpsj/react-login-test.svg?label=Size)
 
-![Header](https://i.imgur.com/aSkqrJp.png)
+![Header](https://i.imgur.com/zIsGldC.png)
 
 A simple login screen made in React Native with Express connection
 
 ## Contributors
-<a href="https://github.com/ffpsj"><img src="https://i.imgur.com/TlK8zDB.png" title="Flávio Farias"></a>
+<a href="https://github.com/flaviofpsj"><img src="https://i.imgur.com/TlK8zDB.png" title="Flávio Farias"></a>
 
 ## On Changing Implementation
-+ Feel free to clone this repository `git clone https://github.com/ffpsj/react-login-test.git`
++ Feel free to clone this repository `git clone https://github.com/flaviofpsj/react-login-test.git`
 
 ## Download
-+ [Repository Download](https://github.com/ffpsj/react-login-test/archive/master.zip)
++ [Repository Download](https://github.com/flaviofpsj/react-login-test/archive/master.zip)
 
 ## My Other Pages
-<a href="https://www.facebook.com/flaviofariasjr"><img src="https://i.imgur.com/bHRTPvs.png" title="Facebook Profile"></a> <a href="https://www.instagram.com/flavioaq2"><img src="https://i.imgur.com/VrYSoc0.png" title="Instagram Profile"></a> <a href="https://www.linkedin.com/in/ffpsj"><img src="https://i.imgur.com/ERL5FFt.png" title="Linkedin Profile"></a> <a href="https://www.medium.com/@ffpsj"><img src="https://i.imgur.com/UPR0HtK.png" title="Medium Profile"></a>
+<a href="https://www.facebook.com/flaviofpsj"><img src="https://i.imgur.com/bHRTPvs.png" title="Facebook Profile"></a> <a href="https://www.instagram.com/flaviofpsj"><img src="https://i.imgur.com/VrYSoc0.png" title="Instagram Profile"></a> <a href="https://www.linkedin.com/in/flaviofpsj"><img src="https://i.imgur.com/ERL5FFt.png" title="Linkedin Profile"></a> <a href="https://www.medium.com/@flaviofpsj"><img src="https://i.imgur.com/UPR0HtK.png" title="Medium Profile"></a>
 
 ## Contact Me
 + E-mail: flavio@engapp.com.br
